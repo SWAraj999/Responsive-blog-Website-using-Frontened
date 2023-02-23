@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>FreeFly - Express your thoughts</title>
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date();
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('Real-Time-Clock').innerHTML = time + "<br>on " + date;
+        }, 1000);
+    </script>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+
+            <span>FreeFly🦋</span>
+
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+        <div class="nav-right">
+            <form action="search.html">
+                <input class="form-input" type="text" name=" query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+            <div class="size">
+                <span id="Real-Time-Clock">Real Time Clock</span>
+
+            </div>
+
+
+        </div>
+    </nav>
+    <div class="for-more-space"></div>
+    <div class="content max-width-1 m-auto my-2">
+        <div class="content-left">
+            <h1>Express your thoughts</h1>
+            <p>Many bloggers and independent creators choose FreeFly than any other blogging tools.
+                Write your first blog with FreeFly and use our intuitive and flexible tools to make it extraordinary.
+            </p>
+            <p>Customize your blog’s look and feel in a couple of clicks with beautifully designed themes. Bring your
+                writing to life with magical drag-and-drop layouts. Or put your fingerprint on every font, color, and
+                element on the page.</p>
+
+        </div>
+        <div class="content-right">
+            <img src="img/home.png" alt="FreeFly">
+        </div>
+    </div>
+    <div class="for-space"></div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <div class="year-box">
+            <div>
+                <h3>Year</h3>
+            </div>
+
+            <div>
+                <input type="radio" name="year" id="">2020
+            </div>
+            <div>
+                <input type="radio" name="year" id="">2021
+            </div>
+
+        </div>
+        <h2>Exclusive Articles</h2>
+        <!-- starts here-->
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/coffee.jpg" alt="Articles">
+            </div>
+
+            <div class="home-article-content font1">
+                <a href="blogpost.html">
+                    <h3>When 100 Strangers Bought Me a Coffee</h3>
+                </a>
+                <div>Author name</div>
+                <span> 21 December | 6 min </span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/chatgpt.jpg" alt="Articles">
+            </div>
+
+            <div class="home-article-content font1">
+                <a href="blogpost.html">
+                    <h3>ChatGPT: Automatic expensive BS at scale</h3>
+                </a>
+
+                <div>Author name</div>
+                <span> 21 December | 6 min </span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/google.png" alt="Articles">
+            </div>
+
+            <div class="home-article-content font1">
+                <a href="blogpost.html">
+                    <h3>An out of Google experience</h3>
+                </a>
+
+                <div>Author name</div>
+                <span> 21 December | 6 min </span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/human.png" alt="Articles">
+            </div>
+
+            <div class="home-article-content font1">
+                <a href="blogpost.html">
+                    <h3>Raise Good Humans</h3>
+                </a>
+                <div>Author name</div>
+                <span> 21 December | 6 min </span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/aiart.jpg" alt="Articles">
+            </div>
+
+            <div class="home-article-content font1">
+                <a href="blogpost.html">
+                    <h3>The Aura of AI-Generated Art</h3>
+                </a>
+                <div>Author name</div>
+                <span> 21 December | 6 min </span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img">
+                <img src="img/setgoals.jpg" alt="Articles">
+            </div>
+
+            <div class="home-article-content font1">
+                <a href="blogpost.html">
+                    <h3>Don’t Just Set Goals. Build Systems</h3>
+                </a>
+                <div>Author name</div>
+                <span> 21 December | 6 min </span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyright &copy; FreeFly.com
+    </div>
+</body>
+
+</html>
